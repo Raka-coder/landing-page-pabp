@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="light" lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Kemahasiswaan - Departemen Informatika</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script>tailwind.config={darkMode:"class",theme:{extend:{colors:{primary:"#137fec","background-light":"#f6f7f8","background-dark":"#101922"},fontFamily:{display:["Inter"]}}}};</script>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="js/components.js" defer></script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+  <div id="site-navbar"></div>
+  <section class="relative bg-slate-900 text-white py-20 overflow-hidden">
+    <img class="absolute inset-0 w-full h-full object-cover opacity-30" src="assets/images/student/org_hmti.png" alt="Students campus life"/>
+    <div class="relative z-10 max-w-7xl mx-auto px-4">
+      <p class="text-primary font-bold uppercase tracking-widest text-sm mb-3">Student Life</p>
+      <h1 class="text-4xl md:text-5xl font-black mb-4">Kemahasiswaan</h1>
+      <p class="text-slate-300 max-w-2xl text-lg">Ekosistem mahasiswa yang aktif, inovatif, dan berprestasi.</p>
+    </div>
+  </section>
+
+  <!-- Organisasi -->
+  <section class="py-20 max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-black text-center mb-4">Organisasi Kemahasiswaan</h2>
+    <p class="text-slate-500 text-center mb-12 max-w-xl mx-auto">Bergabunglah dengan organisasi mahasiswa kami dan kembangkan potensi kepemimpinan, kreativitas, dan jiwa kolaborasimu.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm group hover:border-primary transition-all">
+        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform" src="assets/images/student/org_hmti.png" alt="HMTI Gathering" />
+        <div class="p-8 text-center">
+          <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5 transition-colors">
+            <span class="material-symbols-outlined text-3xl text-blue-600">groups</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Himpunan Mahasiswa Informatika (HMTI)</h3>
+          <p class="text-slate-500 text-sm">Organisasi induk mahasiswa yang menaungi berbagai kegiatan akademik, sosial, dan pengembangan diri mahasiswa Informatika.</p>
+        </div>
+      </div>
+      <div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm text-center group hover:border-primary transition-all">
+        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform" src="assets/images/student/org_coding.png" alt="Programming Club Coding" />
+        <div class="p-8">
+          <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5 transition-colors">
+            <span class="material-symbols-outlined text-3xl text-blue-600">code</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Programming Club</h3>
+          <p class="text-slate-500 text-sm">Komunitas coding dan competitive programming. Aktif mengikuti lomba hackathon, ICPC, dan olympiad programming tingkat nasional dan internasional.</p>
+        </div>
+      </div>
+      <div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm text-center group hover:border-primary transition-all">
+        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform" src="assets/images/student/org_robotics.png" alt="AI Robotics Lab" />
+        <div class="p-8">
+          <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5 transition-colors">
+            <span class="material-symbols-outlined text-3xl text-blue-600">robot_2</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">AI & Robotics Club</h3>
+          <p class="text-slate-500 text-sm">Mengeksplorasi kecerdasan buatan dan robotika melalui proyek nyata, riset bersama, dan partisipasi dalam kontes robot nasional.</p>
+        </div>
+      </div>
+      <div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm text-center group hover:border-primary transition-all">
+        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform" src="assets/images/student/org_cybersec.png" alt="Cyber Security OPS" />
+        <div class="p-8">
+          <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5 transition-colors">
+            <span class="material-symbols-outlined text-3xl text-blue-600">security</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Cyber Security Club</h3>
+          <p class="text-slate-500 text-sm">Berfokus pada keamanan siber, ethical hacking, dan CTF (Capture the Flag). Anggotanya aktif di komunitas keamanan siber nasional.</p>
+        </div>
+      </div>
+      <div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm text-center group hover:border-primary transition-all">
+        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform" src="assets/images/student/org_entrepreneur.png" alt="Entrepreneur Pitch" />
+        <div class="p-8">
+          <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5 transition-colors">
+            <span class="material-symbols-outlined text-3xl text-blue-600">campaign</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Tech Entrepreneurship Club</h3>
+          <p class="text-slate-500 text-sm">Inkubator startup teknologi mahasiswa. Membimbing ide menjadi produk nyata melalui mentoring, funding, dan jaringan alumni.</p>
+        </div>
+      </div>
+      <div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm text-center group hover:border-primary transition-all">
+        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform" src="assets/images/student/org_social.png" alt="Social Impact Community" />
+        <div class="p-8">
+          <div class="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5 transition-colors">
+            <span class="material-symbols-outlined text-3xl text-blue-600">volunteer_activism</span>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Social Impact Tech</h3>
+          <p class="text-slate-500 text-sm">Menginisiasi proyek teknologi untuk kebaikan sosial, seperti aplikasi untuk difabel, digitalisasi UMKM, dan literasi digital pedesaan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beasiswa -->
+  <section class="py-20 bg-white dark:bg-slate-900/50">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-black text-center mb-4">Program Beasiswa</h2>
+      <p class="text-slate-500 text-center mb-12 max-w-xl mx-auto">Kami berkomitmen memastikan tidak ada mahasiswa berbakat yang terhalang oleh keterbatasan finansial.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="flex gap-5 p-6 rounded-2xl border border-slate-100 dark:border-slate-800 bg-background-light dark:bg-slate-900">
+          <span class="material-symbols-outlined text-3xl text-primary shrink-0">workspace_premium</span>
+          <div><h4 class="font-bold mb-1">Beasiswa Prestasi Akademik</h4><p class="text-slate-500 text-sm">Diberikan kepada mahasiswa dengan IPK ≥ 3.75 setiap semester. Mencakup pembebasan UKT penuh.</p></div>
+        </div>
+        <div class="flex gap-5 p-6 rounded-2xl border border-slate-100 dark:border-slate-800 bg-background-light dark:bg-slate-900">
+          <span class="material-symbols-outlined text-3xl text-primary shrink-0">emoji_events</span>
+          <div><h4 class="font-bold mb-1">Beasiswa Prestasi Non-Akademik</h4><p class="text-slate-500 text-sm">Penghargaan bagi mahasiswa yang berprestasi di bidang kompetisi, olahraga, atau seni tingkat nasional.</p></div>
+        </div>
+        <div class="flex gap-5 p-6 rounded-2xl border border-slate-100 dark:border-slate-800 bg-background-light dark:bg-slate-900">
+          <span class="material-symbols-outlined text-3xl text-primary shrink-0">savings</span>
+          <div><h4 class="font-bold mb-1">Beasiswa Kebutuhan Ekonomi (KIP-K)</h4><p class="text-slate-500 text-sm">Bantuan penuh dari pemerintah bagi mahasiswa yang memenuhi kriteria ekonomi tertentu.</p></div>
+        </div>
+        <div class="flex gap-5 p-6 rounded-2xl border border-slate-100 dark:border-slate-800 bg-background-light dark:bg-slate-900">
+          <span class="material-symbols-outlined text-3xl text-primary shrink-0">corporate_fare</span>
+          <div><h4 class="font-bold mb-1">Beasiswa Industri</h4><p class="text-slate-500 text-sm">Kolaborasi dengan perusahaan teknologi mitra seperti Google, Tokopedia, dan Gojek untuk mendanai mahasiswa terpilih.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kegiatan -->
+  <section class="py-20 max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-black text-center mb-12">Kegiatan Tahunan</h2>
+    <div class="space-y-6">
+      <div class="flex flex-col md:flex-row gap-6 bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-100 dark:border-slate-800 shadow-sm">
+        <img class="w-full md:w-48 h-32 object-cover rounded-xl shrink-0" src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=400&q=80" alt="Tech festival"/>
+        <div><span class="text-xs font-bold text-primary uppercase">Maret</span><h4 class="text-lg font-bold my-1">InfoTech Festival</h4><p class="text-slate-500 text-sm">Pameran teknologi, kompetisi coding, dan seminar tahunan yang menghadirkan ratusan peserta dari berbagai universitas.</p></div>
+      </div>
+      <div class="flex flex-col md:flex-row gap-6 bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-100 dark:border-slate-800 shadow-sm">
+        <img class="w-full md:w-48 h-32 object-cover rounded-xl shrink-0" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=400&q=80" alt="Hackathon"/>
+        <div><span class="text-xs font-bold text-primary uppercase">Juli</span><h4 class="text-lg font-bold my-1">Hackathon Informatika</h4><p class="text-slate-500 text-sm">Kompetisi 48 jam non-stop membangun produk teknologi inovatif bersama tim. Hadiah total Rp 50 juta.</p></div>
+      </div>
+      <div class="flex flex-col md:flex-row gap-6 bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-100 dark:border-slate-800 shadow-sm">
+        <img class="w-full md:w-48 h-32 object-cover rounded-xl shrink-0" src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?auto=format&fit=crop&w=400&q=80" alt="Career fair"/>
+        <div><span class="text-xs font-bold text-primary uppercase">Oktober</span><h4 class="text-lg font-bold my-1">Career Fair IT</h4><p class="text-slate-500 text-sm">Bursa karir teknologi yang menghadirkan 50+ perusahaan rekrutmen untuk mahasiswa tingkat akhir dan fresh graduate.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+</body>
+</html>

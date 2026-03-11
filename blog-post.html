@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="light" lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Artikel - Departemen Informatika</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script>tailwind.config={darkMode:"class",theme:{extend:{colors:{primary:"#137fec","background-light":"#f6f7f8","background-dark":"#101922"},fontFamily:{display:["Inter"]}}}};</script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/components.js" defer></script>
+  <style>
+    .prose p{margin-bottom:1.2em;line-height:1.8;color:#334155;}
+    .prose ul,.prose ol{padding-left:1.5em;margin-bottom:1.2em;}
+    .prose li{margin-bottom:.4em;color:#475569;}
+    .prose h3{font-size:1.25rem;font-weight:700;margin:1.5em 0 .75em;color:#1e293b;}
+    .prose blockquote{border-left:4px solid #137fec;padding:1.5em 2em;background:#f8fafc;border-radius:.75rem;margin:2em 0;font-style:italic;color:#334155;box-shadow: inset 0 0 0 1px rgba(19, 127, 236, 0.1);}
+    .prose strong{color:#0f172a;font-weight:800;}
+    
+    /* Dark mode specifically using .dark class */
+    .dark .prose p, .dark .prose li {color:#94a3b8;}
+    .dark .prose h3 {color:#f1f5f9;}
+    .dark .prose strong {color:#f8fafc;}
+    .dark .prose blockquote {background:#111827; color:#cbd5e1; border-left-color:#3b82f6; box-shadow: inset 0 0 0 1px rgba(59, 130, 246, 0.2);}
+  </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+  <div id="site-navbar"></div>
+  <!-- Post Header - populated by JS -->
+  <div id="post-header"></div>
+  <!-- Post Body -->
+  <section class="max-w-3xl mx-auto px-4 py-12">
+    <div id="post-body" class="prose">
+      <div class="animate-pulse space-y-4">
+        <div class="h-4 bg-slate-200 rounded w-3/4"></div>
+        <div class="h-4 bg-slate-200 rounded"></div>
+        <div class="h-4 bg-slate-200 rounded w-5/6"></div>
+      </div>
+    </div>
+    <div class="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800">
+      <a href="blog.html" class="inline-flex items-center gap-2 text-primary font-bold hover:underline">
+        <span class="material-symbols-outlined">arrow_back</span> Kembali ke Berita
+      </a>
+    </div>
+    <!-- Related articles -->
+    <div class="mt-12">
+      <h3 class="text-2xl font-black mb-6">Artikel Terkait</h3>
+      <div id="related-posts" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+    </div>
+  </section>
+  <div id="site-footer"></div>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const postId = params.get('id');
+    fetch('data/news.json').then(r=>r.json()).then(data=>{
+      const post = data.find(n=>n.id===postId);
+      if(!post){document.getElementById('post-body').innerHTML='<p>Artikel tidak ditemukan.</p>';return;}
+      document.title = post.title + ' - Departemen Informatika';
+      document.getElementById('post-header').innerHTML=`
+      <section class="relative bg-slate-950 text-white overflow-hidden">
+          <img class="absolute inset-0 w-full h-full object-cover opacity-30" src="${post.image}" alt="${post.alt}"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+          <div class="relative z-10 max-w-3xl mx-auto px-4 py-24">
+            <a href="blog.html" class="inline-flex items-center gap-1 text-white/70 hover:text-white text-sm mb-6 transition-colors font-medium"><span class="material-symbols-outlined text-base">arrow_back</span> Kembali ke Berita</a>
+            <div class="flex flex-wrap gap-3 mb-6">
+              <span class="bg-primary hover:bg-primary/90 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest transition-colors cursor-default">${post.category}</span>
+              <span class="text-white/60 text-sm flex items-center gap-2"><span class="material-symbols-outlined text-base">calendar_month</span>${post.date}</span>
+            </div>
+            <h1 class="text-3xl md:text-5xl font-black leading-tight tracking-tight">${post.title}</h1>
+          </div>
+        </section>`;
+      document.getElementById('post-body').innerHTML = post.content;
+      // Related posts
+      const related = data.filter(n=>n.id!==postId).slice(0,2);
+      document.getElementById('related-posts').innerHTML=related.map(n=>`
+        <a href="blog-post.html?id=${n.id}" class="group flex gap-4 bg-white dark:bg-slate-900 rounded-xl p-4 border border-slate-100 dark:border-slate-800 hover:border-primary transition-all">
+          <img class="w-24 h-20 object-cover rounded-lg shrink-0" src="${n.image}" alt="${n.alt}"/>
+          <div>
+            <span class="text-xs font-bold text-primary uppercase">${n.category}</span>
+            <p class="font-bold text-sm mt-1 line-clamp-2 group-hover:text-primary">${n.title}</p>
+            <span class="text-xs text-slate-400">${n.date}</span>
+          </div>
+        </a>`).join('');
+    });
+  </script>
+</body>
+</html>

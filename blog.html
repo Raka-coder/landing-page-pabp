@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class="light" lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Berita & Kegiatan - Departemen Informatika</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script>tailwind.config={darkMode:"class",theme:{extend:{colors:{primary:"#137fec","background-light":"#f6f7f8","background-dark":"#101922"},fontFamily:{display:["Inter"]}}}};</script>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/components.js" defer></script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+  <div id="site-navbar"></div>
+  <section class="relative bg-slate-900 text-white py-20 overflow-hidden">
+    <img class="absolute inset-0 w-full h-full object-cover opacity-20" src="assets/images/profile/learning_hero.png" alt="News" />
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 to-transparent"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4">
+      <p class="text-white/60 font-black uppercase tracking-[0.2em] text-xs mb-4">Informasi Terkini</p>
+      <h1 class="text-4xl md:text-6xl font-black mb-4 tracking-tight">Berita & Kegiatan</h1>
+      <p class="text-slate-300 max-w-2xl text-lg font-medium">Update terbaru dari civitas akademika Departemen Informatika.</p>
+    </div>
+  </section>
+  <section class="max-w-7xl mx-auto px-4 py-8">
+    <div class="flex flex-wrap gap-3" id="filter-btns">
+      <button class="filter-btn active px-5 py-2 rounded-full text-sm font-semibold border border-primary bg-primary text-white" data-cat="all">Semua</button>
+      <button class="filter-btn px-5 py-2 rounded-full text-sm font-semibold border border-slate-200 dark:border-slate-700 hover:border-primary" data-cat="Kompetisi">Kompetisi</button>
+      <button class="filter-btn px-5 py-2 rounded-full text-sm font-semibold border border-slate-200 dark:border-slate-700 hover:border-primary" data-cat="Seminar">Seminar</button>
+      <button class="filter-btn px-5 py-2 rounded-full text-sm font-semibold border border-slate-200 dark:border-slate-700 hover:border-primary" data-cat="Pengabdian">Pengabdian</button>
+      <button class="filter-btn px-5 py-2 rounded-full text-sm font-semibold border border-slate-200 dark:border-slate-700 hover:border-primary" data-cat="Penelitian">Penelitian</button>
+      <button class="filter-btn px-5 py-2 rounded-full text-sm font-semibold border border-slate-200 dark:border-slate-700 hover:border-primary" data-cat="Workshop">Workshop</button>
+    </div>
+  </section>
+  <section class="max-w-7xl mx-auto px-4 pb-20">
+    <div id="news-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+  </section>
+  <div id="site-footer"></div>
+  <script>
+    let allNews=[];
+    fetch('data/news.json').then(r=>r.json()).then(data=>{allNews=data;renderNews(data);setupFilters();});
+    function renderNews(items){
+      document.getElementById('news-grid').innerHTML=items.map(n=>`
+        <article class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-800 group flex flex-col">
+          <div class="aspect-video overflow-hidden"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="${n.alt}" src="${n.image}"/></div>
+          <div class="p-6 flex flex-col flex-grow">
+            <div class="flex gap-2 mb-3"><span class="text-xs font-black text-primary uppercase tracking-wider">${n.category}</span><span class="text-xs text-slate-400 font-medium">• ${n.date}</span></div>
+            <h2 class="text-xl font-black mb-3 line-clamp-2 leading-snug group-hover:text-primary transition-colors">${n.title}</h2>
+            <p class="text-slate-600 dark:text-slate-400 text-sm line-clamp-3 mb-5 flex-grow leading-relaxed">${n.excerpt}</p>
+            <a class="inline-flex items-center gap-2 text-primary text-sm font-black mt-auto hover:gap-3 transition-all" href="blog-post.html?id=${n.id}">Baca Selengkapnya <span class="material-symbols-outlined text-[18px]">arrow_right_alt</span></a>
+          </div>
+        </article>`).join('');
+    }
+    function setupFilters(){
+      document.querySelectorAll('.filter-btn').forEach(btn=>{
+        btn.addEventListener('click',()=>{
+          document.querySelectorAll('.filter-btn').forEach(b=>{
+            b.classList.remove('bg-primary','text-white','border-primary');
+            b.classList.add('border-slate-200','dark:border-slate-700');
+          });
+          btn.classList.add('bg-primary','text-white','border-primary');
+          btn.classList.remove('border-slate-200','dark:border-slate-700');
+          const cat=btn.dataset.cat;
+          renderNews(cat==='all'?allNews:allNews.filter(n=>n.category===cat));
+        });
+      });
+    }
+  </script>
+</body>
+</html>

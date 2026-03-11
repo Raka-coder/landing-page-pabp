@@ -1,0 +1,52 @@
+[
+  {
+    "id": "hackathon-2023",
+    "category": "Kompetisi",
+    "date": "24 Okt 2023",
+    "title": "Tim Mahasiswa Meraih Juara 1 Nasional Hackathon 2023",
+    "excerpt": "Mahasiswa kami berhasil mengalahkan 50 tim dari berbagai universitas dalam ajang inovasi digital nasional.",
+    "image": "assets/images/blog/news_hackathon.png",
+    "alt": "Students at a coding competition event",
+    "content": "<p>Departemen Informatika mencetak sejarah baru dalam ajang <strong>Hackathon Nasional 2023</strong> yang diselenggarakan di Jakarta Convention Center. Tim yang terdiri dari lima mahasiswa semester 6 berhasil merebut gelar juara pertama setelah bersaing ketat dengan lebih dari 50 tim dari perguruan tinggi ternama seluruh Indonesia.</p><p>Tim mengusung solusi berbasis <em>Artificial Intelligence</em> untuk membantu petani lokal dalam memprediksi cuaca dan hama tanaman secara real-time menggunakan sensor IoT dan model machine learning. Juri menilai solusi tersebut sangat inovatif, applicable, dan memiliki dampak sosial yang nyata bagi masyarakat.</p><blockquote>\"Kami tidak menyangka bisa menang. Ini hasil kerja keras selama tiga hari penuh tanpa tidur. Terima kasih untuk mentor dan dosen pembimbing kami,\" ujar Ketua Tim, Rizki Pratama.</blockquote><p>Kemenangan ini membawa nama baik Departemen Informatika di kancah nasional dan menjadi bukti nyata bahwa kurikulum berbasis proyek yang kami terapkan mampu menghasilkan lulusan yang siap bersaing di dunia nyata.</p>"
+  },
+  {
+    "id": "seminar-cybersecurity",
+    "category": "Seminar",
+    "date": "18 Okt 2023",
+    "title": "Kuliah Tamu: Masa Depan Cybersecurity di Industri Keuangan",
+    "excerpt": "Menghadirkan pakar keamanan siber dari perusahaan teknologi terkemuka untuk berbagi wawasan.",
+    "image": "assets/images/blog/news_security.png",
+    "alt": "Academic seminar with guest speaker",
+    "content": "<p>Departemen Informatika menggelar sesi <strong>Kuliah Tamu</strong> yang menghadirkan Bapak Dr. Andika Setiawan, seorang pakar keamanan siber senior dari perusahaan fintech terkemuka di Indonesia. Beliau membawakan materi bertajuk <em>\"Cybersecurity Landscape: Ancaman dan Peluang di Industri Keuangan Digital\"</em>.</p><p>Dalam sesi yang dihadiri lebih dari 200 mahasiswa dan dosen ini, pembicara menjelaskan betapa krusialnya peran profesional keamanan siber dalam melindungi data keuangan jutaan nasabah. Beberapa topik utama yang dibahas meliputi:</p><ul><li>Tren serangan siber terkini seperti ransomware and social engineering</li><li>Implementasi Zero-Trust Architecture di lingkungan perbankan</li><li>Regulasi dan kepatuhan keamanan data di Indonesia (POJK dan UU PDP)</li><li>Peluang karir di bidang cybersecurity</li></ul><p>Acara ditutup dengan sesi tanya jawab interaktif di mana mahasiswa aktif mengajukan pertanyaan seputar praktik terbaik keamanan siber dan prospek karir di bidang ini.</p>"
+  },
+  {
+    "id": "abdimas-umkm",
+    "category": "Pengabdian",
+    "date": "10 Okt 2023",
+    "title": "Digitalisasi UMKM Desa: Inisiatif Literasi Digital Informatika",
+    "excerpt": "Program pengabdian masyarakat untuk membantu digitalisasi pemasaran produk lokal desa binaan.",
+    "image": "assets/images/blog/news_community.png",
+    "alt": "Students participating in community service",
+    "content": "<p>Sebagai wujud nyata Tri Dharma Perguruan Tinggi, Departemen Informatika menerjunkan 30 mahasiswa dan 5 dosen pembimbing ke Desa Sukamakmur, Bogor, dalam program <strong>Pengabdian Masyarakat</strong> bertema digitalisasi UMKM.</p><p>Program ini berlangsung selama dua pekan dan berfokus pada tiga aspek utama:</p><ol><li><strong>Pembuatan Toko Online:</strong> Tim membantu pelaku UMKM membuat akun dan produk di platform marketplace seperti Tokopedia dan Shopee.</li><li><strong>Pelatihan Media Sosial:</strong> Warga diajarkan cara membuat konten foto produk yang menarik menggunakan hanya smartphone.</li><li><strong>Sistem Pembukuan Digital:</strong> Pelaku UMKM diperkenalkan dengan aplikasi pembukuan sederhana untuk mencatat pemasukan dan pengeluaran.</li></ol><p>Hasilnya sangat menggembirakan. Dalam tiga bulan setelah program, rata-rata omzet UMKM binaan meningkat sebesar <strong>35%</strong> berkat jangkauan pasar yang lebih luas melalui platform digital.</p>"
+  },
+  {
+    "id": "publikasi-jurnal",
+    "category": "Penelitian",
+    "date": "05 Nov 2023",
+    "title": "Publikasi Jurnal Internasional Q1 oleh Dosen Informatika",
+    "excerpt": "Dosen Departemen Informatika berhasil mempublikasikan hasil penelitian terkait AI dan deteksi dini penyakit berbasis citra medis.",
+    "image": "assets/images/blog/news_research.png",
+    "alt": "Research paper and laptop",
+    "content": "<p>Sebuah pencapaian membanggakan diraih oleh tim peneliti Departemen Informatika. Makalah berjudul <em>\"Deep Convolutional Neural Network for Early Detection of Diabetic Retinopathy Using Fundus Photography\"</em> yang ditulis oleh Dr. Siti Rahayu bersama dua mahasiswa doktoral berhasil dipublikasikan di jurnal internasional bereputasi Scopus Q1, <strong>IEEE Transactions on Medical Imaging</strong>.</p><p>Penelitian ini mengembangkan model AI yang mampu mendeteksi retinopati diabetik di tahap awal dengan akurasi mencapai <strong>97.8%</strong>, melampaui kemampuan diagnosa dokter spesialis mata pada kondisi tertentu. Model ini dilatih menggunakan dataset lebih dari 100.000 foto fundus mata dari berbagai penjuru dunia.</p><p>Implikasi dari penelitian ini sangat besar, terutama bagi Indonesia yang memiliki jutaan penderita diabetes. Dengan alat bantu berbasis AI ini, diagnosis dapat dilakukan lebih cepat dan murah, bahkan di daerah terpencil yang minim tenaga medis spesialis.</p>"
+  },
+  {
+    "id": "workshop-cloud",
+    "category": "Workshop",
+    "date": "12 Nov 2023",
+    "title": "Workshop Cloud Computing Bersama Ahli Industri",
+    "excerpt": "Mahasiswa mendapatkan kesempatan emas mengikuti workshop praktis manajemen infrastruktur cloud computing.",
+    "image": "assets/images/blog/news_workshop.png",
+    "alt": "Cloud computing network infrastructure",
+    "content": "<p>Departemen Informatika bekerja sama dengan <strong>PT. Cloud Nusantara</strong> menyelenggarakan workshop intensif dua hari bertajuk <em>\"From Zero to Cloud: Membangun dan Mengelola Infrastruktur Cloud di AWS\"</em>. Workshop ini diikuti oleh 60 mahasiswa terpilih dari semester 4 ke atas.</p><p>Peserta mendapatkan pengalaman hands-on langsung menggunakan platform AWS, mulai dari konfigurasi EC2 instance, manajemen S3 bucket, hingga deployment aplikasi menggunakan layanan Elastic Beanstalk dan kontainerisasi dengan Docker dan Kubernetes.</p><p>Di akhir workshop, setiap kelompok diminta untuk men-deploy aplikasi web sederhana ke cloud dan mempresentasikan arsitektur yang mereka bangun. Selain ilmu teknis, peserta juga mendapatkan sertifikat partisipasi dan voucher untuk ujian sertifikasi AWS Cloud Practitioner.</p><p>\"Workshop ini sangat membuka wawasan kami tentang dunia kerja nyata. Kami tidak hanya belajar teori, tapi langsung praktik,\" ungkap salah satu peserta.</p>"
+  }
+]

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="light" lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Perpustakaan - Departemen Informatika</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script>tailwind.config={darkMode:"class",theme:{extend:{colors:{primary:"#137fec","background-light":"#f6f7f8","background-dark":"#101922"},fontFamily:{display:["Inter"]}}}};</script>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <script src="../js/components.js" defer></script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+  <div id="site-navbar"></div>
+  <section class="relative bg-slate-900 text-white py-20 overflow-hidden">
+    <img class="absolute inset-0 w-full h-full object-cover opacity-30" src="../assets/images/profile/learning_hero.png" alt="Library"/>
+    <div class="relative z-10 max-w-7xl mx-auto px-4">
+      <p class="text-primary font-bold uppercase tracking-widest text-sm mb-3">Fasilitas</p>
+      <h1 class="text-4xl md:text-5xl font-black mb-4">Perpustakaan Digital</h1>
+      <p class="text-slate-300 max-w-2xl text-lg">Sumber pengetahuan lengkap untuk mendukung akademik dan riset mahasiswa.</p>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="max-w-7xl mx-auto px-4 -mt-10 relative z-20 mb-16">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-white dark:bg-slate-900 rounded-xl p-5 text-center shadow-lg border-b-4 border-primary"><p class="text-3xl font-black text-primary">5K+</p><p class="text-slate-500 text-sm">Judul e-Book</p></div>
+      <div class="bg-white dark:bg-slate-900 rounded-xl p-5 text-center shadow-lg border-b-4 border-primary"><p class="text-3xl font-black text-primary">200+</p><p class="text-slate-500 text-sm">Jurnal Internasional</p></div>
+      <div class="bg-white dark:bg-slate-900 rounded-xl p-5 text-center shadow-lg border-b-4 border-primary"><p class="text-3xl font-black text-primary">2K+</p><p class="text-slate-500 text-sm">Buku Fisik</p></div>
+      <div class="bg-white dark:bg-slate-900 rounded-xl p-5 text-center shadow-lg border-b-4 border-primary"><p class="text-3xl font-black text-primary">24/7</p><p class="text-slate-500 text-sm">Akses Online</p></div>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-4 pb-20">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
+      <img class="rounded-2xl w-full h-80 object-cover shadow-xl" src="../assets/images/profile/visi_hero.png" alt="Library interior"/>
+      <div>
+        <h2 class="text-3xl font-black mb-4">Perpustakaan Modern & Digital</h2>
+        <p class="text-slate-600 dark:text-slate-400 mb-4">Perpustakaan Departemen Informatika telah sepenuhnya bertransformasi menjadi pusat pembelajaran digital. Mahasiswa dapat mengakses ribuan sumber daya dari mana saja dan kapan saja melalui portal digital kami.</p>
+        <p class="text-slate-600 dark:text-slate-400 mb-6">Selain koleksi digital, kami juga menyediakan ruang baca nyaman, ruang diskusi kelompok ber-AC, dan bilik studi pribadi yang dilengkapi monitor tambahan untuk produktivitas maksimal.</p>
+        <a href="#" class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-bold hover:bg-primary/90 transition-colors">
+          <span class="material-symbols-outlined">menu_book</span> Akses Portal Perpustakaan
+        </a>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <h2 class="text-3xl font-black text-center mb-10">Layanan Perpustakaan</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-100 dark:border-slate-800 shadow-sm">
+        <span class="material-symbols-outlined text-3xl text-primary mb-4 block">database</span>
+        <h4 class="font-bold mb-2">Akses Database Penelitian</h4>
+        <p class="text-slate-500 text-sm">Langganan penuh ke IEEE Xplore, ACM Digital Library, Springer, dan ScienceDirect untuk akses paper ilmiah terkini.</p>
+      </div>
+      <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-100 dark:border-slate-800 shadow-sm">
+        <span class="material-symbols-outlined text-3xl text-primary mb-4 block">plagiarism</span>
+        <h4 class="font-bold mb-2">Cek Plagiasi</h4>
+        <p class="text-slate-500 text-sm">Layanan pengecekan orisinalitas karya ilmiah secara gratis menggunakan sistem Turnitin untuk mahasiswa dan dosen.</p>
+      </div>
+      <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-100 dark:border-slate-800 shadow-sm">
+        <span class="material-symbols-outlined text-3xl text-primary mb-4 block">computer</span>
+        <h4 class="font-bold mb-2">Ruang Komputer Perpustakaan</h4>
+        <p class="text-slate-500 text-sm">Tersedia 50 komputer khusus untuk riset, penulisan skripsi, dan akses sumber daya digital selama jam operasional.</p>
+      </div>
+      <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-100 dark:border-slate-800 shadow-sm">
+        <span class="material-symbols-outlined text-3xl text-primary mb-4 block">groups</span>
+        <h4 class="font-bold mb-2">Ruang Diskusi Kelompok</h4>
+        <p class="text-slate-500 text-sm">4 ruang diskusi yang dapat dipesan secara online, masing-masing berkapasitas 4-8 orang dengan whiteboard dan TV interaktif.</p>
+      </div>
+      <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-100 dark:border-slate-800 shadow-sm">
+        <span class="material-symbols-outlined text-3xl text-primary mb-4 block">videocam</span>
+        <h4 class="font-bold mb-2">Konsultasi Referensi Online</h4>
+        <p class="text-slate-500 text-sm">Layanan konsultasi virtual dengan pustakawan ahli untuk membantu pencarian sumber referensi dan pengelolaan sitasi.</p>
+      </div>
+      <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-100 dark:border-slate-800 shadow-sm">
+        <span class="material-symbols-outlined text-3xl text-primary mb-4 block">print</span>
+        <h4 class="font-bold mb-2">Cetak & Scan Dokumen</h4>
+        <p class="text-slate-500 text-sm">Layanan cetak, fotokopi, dan scan dokumen dengan harga terjangkau untuk keperluan akademik mahasiswa.</p>
+      </div>
+    </div>
+  </section>
+  <div id="site-footer"></div>
+</body>
+</html>

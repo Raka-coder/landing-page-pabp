@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html class="light" lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Laboratorium - Departemen Informatika</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script>tailwind.config={darkMode:"class",theme:{extend:{colors:{primary:"#137fec","background-light":"#f6f7f8","background-dark":"#101922"},fontFamily:{display:["Inter"]}}}};</script>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <script src="../js/components.js" defer></script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+  <div id="site-navbar"></div>
+  <section class="relative bg-slate-900 text-white py-20 overflow-hidden">
+    <img class="absolute inset-0 w-full h-full object-cover opacity-35" src="../assets/images/profile/learning_hero.png" alt="Computer lab"/>
+    <div class="relative z-10 max-w-7xl mx-auto px-4">
+      <p class="text-primary font-bold uppercase tracking-widest text-sm mb-3">Fasilitas</p>
+      <h1 class="text-4xl md:text-5xl font-black mb-4">Laboratorium</h1>
+      <p class="text-slate-300 max-w-2xl text-lg">Fasilitas Laboratorium yang mendukung proses belajar dan riset mahasiswa.</p>
+    </div>
+  </section>
+
+  <!-- Lab stats -->
+  <section class="max-w-7xl mx-auto px-4 -mt-10 relative z-20 mb-16">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-white dark:bg-slate-900 rounded-xl p-5 text-center shadow-lg border-b-4 border-primary"><p class="text-3xl font-black text-primary">4</p><p class="text-slate-500 text-sm">Laboratorium</p></div>
+      <div class="bg-white dark:bg-slate-900 rounded-xl p-5 text-center shadow-lg border-b-4 border-primary"><p class="text-3xl font-black text-primary">200+</p><p class="text-slate-500 text-sm">Unit Komputer</p></div>
+      <div class="bg-white dark:bg-slate-900 rounded-xl p-5 text-center shadow-lg border-b-4 border-primary"><p class="text-3xl font-black text-primary">24/7</p><p class="text-slate-500 text-sm">Akses Mahasiswa</p></div>
+      <div class="bg-white dark:bg-slate-900 rounded-xl p-5 text-center shadow-lg border-b-4 border-primary"><p class="text-3xl font-black text-primary">5Gbps</p><p class="text-slate-500 text-sm">Koneksi Internet</p></div>
+    </div>
+  </section>
+
+  <!-- Lab Cards -->
+  <section class="max-w-7xl mx-auto px-4 pb-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm group">
+        <div class="h-52 overflow-hidden"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="../assets/images/academic/kk_ai_ds_hero.png" alt="AI Lab"/></div>
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3"><span class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary"><span class="material-symbols-outlined">smart_toy</span></span><h3 class="text-xl font-bold">Lab Kecerdasan Buatan</h3></div>
+          <p class="text-slate-500 text-sm mb-4">Dilengkapi GPU workstation NVIDIA A100, Intel XPU, dan cluster computing untuk training model deep learning skala besar.</p>
+          <ul class="text-sm text-slate-500 space-y-1"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>32 workstation GPU high-performance</li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Lisensi software: MATLAB, TensorFlow, PyTorch</li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Kapasitas 40 mahasiswa per sesi</li></ul>
+        </div>
+      </div>
+      <div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm group">
+        <div class="h-52 overflow-hidden"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="../assets/images/student/org_cybersec.png" alt="Network Lab"/></div>
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3"><span class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary"><span class="material-symbols-outlined">network_node</span></span><h3 class="text-xl font-bold">Lab Jaringan & Keamanan Siber</h3></div>
+          <p class="text-slate-500 text-sm mb-4">Fasilitas lengkap untuk praktikum jaringan komputer, ethical hacking, dan simulasi serangan-pertahanan siber.</p>
+          <ul class="text-sm text-slate-500 space-y-1"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Cisco router & switch enterprise</li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Platform CTF dan penetration testing</li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Ruang server mini untuk simulasi</li></ul>
+        </div>
+      </div>
+      <div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm group">
+        <div class="h-52 overflow-hidden"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="../assets/images/academic/kk_se_hci_hero.png" alt="Software Lab"/></div>
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3"><span class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary"><span class="material-symbols-outlined">developer_mode</span></span><h3 class="text-xl font-bold">Lab Rekayasa Perangkat Lunak</h3></div>
+          <p class="text-slate-500 text-sm mb-4">Lingkungan kolaboratif untuk pengembangan proyek perangkat lunak secara tim dengan infrastruktur DevOps modern.</p>
+          <ul class="text-sm text-slate-500 space-y-1"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Server CI/CD pipeline privat</li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Lisensi JetBrains IDE suite</li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Ruang scrum & whiteboard digital</li></ul>
+        </div>
+      </div>
+      <div class="bg-white dark:bg-slate-900 rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 shadow-sm group">
+        <div class="h-52 overflow-hidden"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="../assets/images/student/org_robotics.png" alt="IoT Lab"/></div>
+        <div class="p-6">
+          <div class="flex items-center gap-3 mb-3"><span class="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary"><span class="material-symbols-outlined">sensors</span></span><h3 class="text-xl font-bold">Lab IoT & Embedded Systems</h3></div>
+          <p class="text-slate-500 text-sm mb-4">Peralatan lengkap untuk desain dan prototyping sistem tertanam dan Internet of Things berbasis Arduino, Raspberry Pi, dan ESP32.</p>
+          <ul class="text-sm text-slate-500 space-y-1"><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>200+ jenis sensor dan modul IoT</li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>Peralatan soldering & prototyping</li><li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-base">check_circle</span>3D printer untuk pembuatan casing</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="site-footer"></div>
+</body>
+</html>

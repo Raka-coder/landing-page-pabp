@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html class="light" lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Modul Mobile Programming - Departemen Informatika</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script>tailwind.config={darkMode:"class",theme:{extend:{colors:{primary:"#137fec","background-light":"#f6f7f8","background-dark":"#101922"},fontFamily:{display:["Inter"]}}}};</script>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <script src="../js/components.js" defer></script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+  <div id="site-navbar"></div>
+  <section class="relative bg-slate-900 text-white py-20 overflow-hidden">
+    <img class="absolute inset-0 w-full h-full object-cover opacity-30" src="../assets/images/student/org_entrepreneur.png" alt="Mobile app development"/>
+    <div class="relative z-10 max-w-7xl mx-auto px-4">
+      <a href="/akademik/kurikulum.html" class="inline-flex items-center gap-1 text-primary/80 hover:text-primary text-sm mb-4"><span class="material-symbols-outlined text-base">arrow_back</span>Kembali ke Kurikulum</a>
+      <div class="inline-block px-4 py-1 bg-primary/20 text-primary rounded-full text-sm font-bold mb-3">Konsentrasi Unggulan</div>
+      <h1 class="text-4xl md:text-5xl font-black mb-4">Mobile Programming</h1>
+      <p class="text-slate-300 max-w-2xl text-lg">Kuasai pengembangan aplikasi mobile untuk Android dan iOS dengan teknologi cross-platform terkini.</p>
+    </div>
+  </section>
+
+  <section class="py-20 max-w-7xl mx-auto px-4">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <div class="lg:col-span-2">
+        <h2 class="text-3xl font-black mb-6">Tentang Konsentrasi Ini</h2>
+        <p class="text-slate-600 dark:text-slate-400 mb-4">Di era smartphone, permintaan pengembang mobile terus melonjak. Konsentrasi Mobile Programming mempersiapkan mahasiswa untuk menjadi ahli pengembang aplikasi mobile yang produktif, mampu membangun aplikasi Android/iOS dari satu codebase menggunakan Flutter.</p>
+        <p class="text-slate-600 dark:text-slate-400 mb-8">Mahasiswa akan belajar manajemen state, integrasi API, notifikasi push, animasi UI, hingga publikasi ke Google Play Store dan Apple App Store. Setiap mahasiswa akan menyelesaikan satu proyek aplikasi mobile utuh sebagai tugas akhir konsentrasi.</p>
+
+        <h3 class="text-2xl font-black mb-4">Mata Kuliah Konsentrasi</h3>
+        <div class="space-y-3 mb-10">
+          <div class="flex items-center gap-4 bg-white dark:bg-slate-900 rounded-xl p-4 border border-slate-100 dark:border-slate-800">
+            <span class="material-symbols-outlined text-primary">check_circle</span>
+            <div><p class="font-semibold">Pemrograman Mobile (Semester 5)</p><p class="text-slate-500 text-sm">Flutter dasar, widget, state management, integrasi REST API</p></div>
+          </div>
+          <div class="flex items-center gap-4 bg-white dark:bg-slate-900 rounded-xl p-4 border border-slate-100 dark:border-slate-800">
+            <span class="material-symbols-outlined text-primary">check_circle</span>
+            <div><p class="font-semibold">Desain UI/UX Mobile (Pilihan)</p><p class="text-slate-500 text-sm">Material Design 3, Human Interface Guidelines, Figma prototyping</p></div>
+          </div>
+          <div class="flex items-center gap-4 bg-white dark:bg-slate-900 rounded-xl p-4 border border-slate-100 dark:border-slate-800">
+            <span class="material-symbols-outlined text-primary">check_circle</span>
+            <div><p class="font-semibold">Mobile Advanced (Pilihan)</p><p class="text-slate-500 text-sm">Animasi kompleks, native channels, background services, push notification</p></div>
+          </div>
+          <div class="flex items-center gap-4 bg-white dark:bg-slate-900 rounded-xl p-4 border border-slate-100 dark:border-slate-800">
+            <span class="material-symbols-outlined text-primary">check_circle</span>
+            <div><p class="font-semibold">Backend for Mobile (Pilihan)</p><p class="text-slate-500 text-sm">Firebase, Supabase, GraphQL, real-time database</p></div>
+          </div>
+          <div class="flex items-center gap-4 bg-white dark:bg-slate-900 rounded-xl p-4 border border-slate-100 dark:border-slate-800">
+            <span class="material-symbols-outlined text-primary">check_circle</span>
+            <div><p class="font-semibold">Pengujian Aplikasi Mobile (Pilihan)</p><p class="text-slate-500 text-sm">Unit test, widget test, integration test, performance profiling</p></div>
+          </div>
+        </div>
+
+        <h3 class="text-2xl font-black mb-4">Teknologi & Framework</h3>
+        <div class="flex flex-wrap gap-3">
+          <span class="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-bold">Flutter</span>
+          <span class="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-bold">Dart</span>
+          <span class="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-bold">React Native</span>
+          <span class="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-bold">Firebase</span>
+          <span class="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-bold">Supabase</span>
+          <span class="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-bold">Android Studio</span>
+          <span class="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-bold">Figma</span>
+          <span class="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-bold">REST/GraphQL</span>
+        </div>
+      </div>
+      <div class="space-y-5">
+        <div class="bg-gradient-to-br from-primary to-blue-700 rounded-2xl p-6 text-white">
+          <h4 class="font-black text-lg mb-4">Prospek Karir</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-base">arrow_right</span>Flutter Developer</li>
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-base">arrow_right</span>Android Developer</li>
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-base">arrow_right</span>iOS Developer</li>
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-base">arrow_right</span>Mobile UI/UX Designer</li>
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-base">arrow_right</span>Mobile Tech Lead</li>
+            <li class="flex items-center gap-2"><span class="material-symbols-outlined text-base">arrow_right</span>Indie App Developer</li>
+          </ul>
+        </div>
+        <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-100 dark:border-slate-800">
+          <h4 class="font-black mb-3">Rata-rata Gaji Lulusan</h4>
+          <p class="text-4xl font-black text-primary">Rp 9-16 Jt</p>
+          <p class="text-slate-500 text-sm mt-1">per bulan (fresh graduate)</p>
+        </div>
+        <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-100 dark:border-slate-800">
+          <h4 class="font-black mb-3">Mitra Industri</h4>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full text-xs font-semibold">Gojek</span>
+            <span class="bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full text-xs font-semibold">OVO</span>
+            <span class="bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full text-xs font-semibold">Grab</span>
+            <span class="bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full text-xs font-semibold">BCA Digital</span>
+            <span class="bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full text-xs font-semibold">Telkom</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="site-footer"></div>
+</body>
+</html>

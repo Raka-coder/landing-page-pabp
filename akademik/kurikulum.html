@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="light" lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Kurikulum - Departemen Informatika</title>
+  <meta name="description" content="Kurikulum lengkap Departemen Informatika semester 1 hingga 8 beserta daftar mata kuliah, SKS, dan deskripsi lengkap." />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode:"class",
+      theme:{extend:{colors:{primary:"#137fec","background-light":"#f6f7f8","background-dark":"#101922"},fontFamily:{display:["Inter"]}}}
+    };
+  </script>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/components.js" defer></script>
+  <style>
+    .tab-btn.active { background-color: #137fec; color: white; }
+    .semester-content { display: none; }
+    .semester-content.active { display: block; }
+  </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100">
+  <div id="site-navbar"></div>
+
+  <!-- Page Header -->
+  <section class="relative bg-slate-900 text-white py-20 overflow-hidden">
+    <img class="absolute inset-0 w-full h-full object-cover opacity-25" src="../assets/images/academic/curriculum_hero.png" alt="Curriculum books" />
+    <div class="relative z-10 max-w-7xl mx-auto px-4">
+      <p class="text-primary font-bold uppercase tracking-widest text-sm mb-3">Akademik</p>
+      <h1 class="text-4xl md:text-5xl font-black mb-4">Kurikulum Akademik 2024</h1>
+      <p class="text-slate-300 max-w-2xl text-lg">Mata kuliah lengkap dari Semester 1 hingga Semester 8, dirancang sesuai standar industri global.</p>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="max-w-7xl mx-auto px-4 -mt-10 relative z-20 mb-16">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="bg-white dark:bg-slate-900 rounded-xl p-5 text-center shadow-lg border-b-4 border-primary">
+        <p class="text-3xl font-black text-primary">8</p><p class="text-slate-500 text-sm">Semester</p>
+      </div>
+      <div class="bg-white dark:bg-slate-900 rounded-xl p-5 text-center shadow-lg border-b-4 border-primary">
+        <p class="text-3xl font-black text-primary">144</p><p class="text-slate-500 text-sm">Total SKS</p>
+      </div>
+      <div class="bg-white dark:bg-slate-900 rounded-xl p-5 text-center shadow-lg border-b-4 border-primary">
+        <p class="text-3xl font-black text-primary">48</p><p class="text-slate-500 text-sm">Mata Kuliah</p>
+      </div>
+      <div class="bg-white dark:bg-slate-900 rounded-xl p-5 text-center shadow-lg border-b-4 border-primary">
+        <p class="text-3xl font-black text-primary">4</p><p class="text-slate-500 text-sm">Tahun Studi</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabs & Table -->
+  <section class="max-w-7xl mx-auto px-4 pb-20">
+    <div class="flex flex-wrap gap-2 mb-8" id="semester-tabs">
+      <button class="tab-btn active px-5 py-2 rounded-lg font-semibold text-sm border border-primary transition-colors" data-sem="1">Semester 1</button>
+      <button class="tab-btn px-5 py-2 rounded-lg font-semibold text-sm border border-slate-200 dark:border-slate-700 hover:border-primary transition-colors" data-sem="2">Semester 2</button>
+      <button class="tab-btn px-5 py-2 rounded-lg font-semibold text-sm border border-slate-200 dark:border-slate-700 hover:border-primary transition-colors" data-sem="3">Semester 3</button>
+      <button class="tab-btn px-5 py-2 rounded-lg font-semibold text-sm border border-slate-200 dark:border-slate-700 hover:border-primary transition-colors" data-sem="4">Semester 4</button>
+      <button class="tab-btn px-5 py-2 rounded-lg font-semibold text-sm border border-slate-200 dark:border-slate-700 hover:border-primary transition-colors" data-sem="5">Semester 5</button>
+      <button class="tab-btn px-5 py-2 rounded-lg font-semibold text-sm border border-slate-200 dark:border-slate-700 hover:border-primary transition-colors" data-sem="6">Semester 6</button>
+      <button class="tab-btn px-5 py-2 rounded-lg font-semibold text-sm border border-slate-200 dark:border-slate-700 hover:border-primary transition-colors" data-sem="7">Semester 7</button>
+      <button class="tab-btn px-5 py-2 rounded-lg font-semibold text-sm border border-slate-200 dark:border-slate-700 hover:border-primary transition-colors" data-sem="8">Semester 8</button>
+    </div>
+
+    <!-- Semester 1 -->
+    <div class="semester-content active" id="sem-1">
+      <div class="overflow-x-auto rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800">
+        <table class="w-full text-sm bg-white dark:bg-slate-900">
+          <thead><tr class="bg-primary text-white"><th class="px-4 py-3 text-left">No</th><th class="px-4 py-3 text-left">Kode MK</th><th class="px-4 py-3 text-left">Mata Kuliah</th><th class="px-4 py-3 text-center">SKS</th><th class="px-4 py-3 text-left">Deskripsi</th></tr></thead>
+          <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">1</td><td class="px-4 py-3 font-mono text-primary">IF101</td><td class="px-4 py-3 font-semibold">Pengantar Informatika</td><td class="px-4 py-3 text-center font-bold">2</td><td class="px-4 py-3 text-slate-500">Pengenalan konsep dasar ilmu informatika, sejarah komputer, dan peran informatika di era digital.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">2</td><td class="px-4 py-3 font-mono text-primary">IF102</td><td class="px-4 py-3 font-semibold">Algoritma & Pemrograman</td><td class="px-4 py-3 text-center font-bold">4</td><td class="px-4 py-3 text-slate-500">Konsep dasar algoritma, flowchart, pseudocode, dan pemrograman menggunakan bahasa Python untuk pemula.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">3</td><td class="px-4 py-3 font-mono text-primary">MA101</td><td class="px-4 py-3 font-semibold">Kalkulus I</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Limit, turunan, integral, dan aplikasinya dalam komputasi numerik dan grafika komputer.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">4</td><td class="px-4 py-3 font-mono text-primary">MA102</td><td class="px-4 py-3 font-semibold">Matematika Diskrit</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Logika proposional, himpunan, relasi, fungsi, teori graf, dan kombinatorika sebagai fondasi ilmu komputer.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">5</td><td class="px-4 py-3 font-mono text-primary">IF103</td><td class="px-4 py-3 font-semibold">Sistem Digital</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Sistem bilangan, gerbang logika, rangkaian kombinasional dan sekuensial, dan aritmetika biner.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">6</td><td class="px-4 py-3 font-mono text-primary">UM101</td><td class="px-4 py-3 font-semibold">Bahasa Indonesia</td><td class="px-4 py-3 text-center font-bold">2</td><td class="px-4 py-3 text-slate-500">Penguasaan bahasa Indonesia untuk penulisan karya tulis ilmiah dan laporan teknis.</td></tr>
+            <tr class="bg-primary/5 font-bold"><td colspan="3" class="px-4 py-3 text-right">Total SKS Semester 1</td><td class="px-4 py-3 text-center text-primary text-lg">17</td><td class="px-4 py-3"></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Semester 2 -->
+    <div class="semester-content" id="sem-2">
+      <div class="overflow-x-auto rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800">
+        <table class="w-full text-sm bg-white dark:bg-slate-900">
+          <thead><tr class="bg-primary text-white"><th class="px-4 py-3 text-left">No</th><th class="px-4 py-3 text-left">Kode MK</th><th class="px-4 py-3 text-left">Mata Kuliah</th><th class="px-4 py-3 text-center">SKS</th><th class="px-4 py-3 text-left">Deskripsi</th></tr></thead>
+          <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">1</td><td class="px-4 py-3 font-mono text-primary">IF201</td><td class="px-4 py-3 font-semibold">Pemrograman Berorientasi Objek</td><td class="px-4 py-3 text-center font-bold">4</td><td class="px-4 py-3 text-slate-500">Konsep kelas, objek, enkapsulasi, pewarisan, dan polimorfisme menggunakan bahasa Java.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">2</td><td class="px-4 py-3 font-mono text-primary">IF202</td><td class="px-4 py-3 font-semibold">Struktur Data</td><td class="px-4 py-3 text-center font-bold">4</td><td class="px-4 py-3 text-slate-500">Array, linked list, stack, queue, tree, dan graph beserta implementasi dan analisis kompleksitasnya.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">3</td><td class="px-4 py-3 font-mono text-primary">MA201</td><td class="px-4 py-3 font-semibold">Aljabar Linear</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Vektor, matriks, transformasi linear, nilai eigen, dan aplikasinya pada grafika komputer dan machine learning.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">4</td><td class="px-4 py-3 font-mono text-primary">IF203</td><td class="px-4 py-3 font-semibold">Arsitektur & Organisasi Komputer</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Komponen CPU, memori, I/O, pipeline, dan arsitektur set instruksi (ISA). Pengantar assembly language.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">5</td><td class="px-4 py-3 font-mono text-primary">IF204</td><td class="px-4 py-3 font-semibold">Basis Data</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Model relasional, desain ER diagram, normalisasi, dan SQL dasar untuk pengelolaan data terstruktur.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">6</td><td class="px-4 py-3 font-mono text-primary">UM201</td><td class="px-4 py-3 font-semibold">Bahasa Inggris Teknik</td><td class="px-4 py-3 text-center font-bold">2</td><td class="px-4 py-3 text-slate-500">Membaca, memahami, dan menulis dokumentasi teknis dalam bahasa Inggris untuk keperluan profesional IT.</td></tr>
+            <tr class="bg-primary/5 font-bold"><td colspan="3" class="px-4 py-3 text-right">Total SKS Semester 2</td><td class="px-4 py-3 text-center text-primary text-lg">19</td><td class="px-4 py-3"></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Semester 3 -->
+    <div class="semester-content" id="sem-3">
+      <div class="overflow-x-auto rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800">
+        <table class="w-full text-sm bg-white dark:bg-slate-900">
+          <thead><tr class="bg-primary text-white"><th class="px-4 py-3 text-left">No</th><th class="px-4 py-3 text-left">Kode MK</th><th class="px-4 py-3 text-left">Mata Kuliah</th><th class="px-4 py-3 text-center">SKS</th><th class="px-4 py-3 text-left">Deskripsi</th></tr></thead>
+          <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">1</td><td class="px-4 py-3 font-mono text-primary">IF301</td><td class="px-4 py-3 font-semibold">Analisis & Desain Algoritma</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Teknik desain algoritma: divide & conquer, greedy, dynamic programming, dan analisis kompleksitas.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">2</td><td class="px-4 py-3 font-mono text-primary">IF302</td><td class="px-4 py-3 font-semibold">Pemrograman Web</td><td class="px-4 py-3 text-center font-bold">4</td><td class="px-4 py-3 text-slate-500">HTML5, CSS3, JavaScript modern, HTTP protocol, dan pengembangan front-end web yang responsif dan interaktif.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">3</td><td class="px-4 py-3 font-mono text-primary">IF303</td><td class="px-4 py-3 font-semibold">Jaringan Komputer</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Model OSI/TCP-IP, protokol jaringan, konfigurasi router/switch, dan dasar-dasar keamanan jaringan.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">4</td><td class="px-4 py-3 font-mono text-primary">IF304</td><td class="px-4 py-3 font-semibold">Sistem Operasi</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Proses, thread, manajemen memori, sistem file, dan sinkronisasi. Praktikum dengan Linux/Unix.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">5</td><td class="px-4 py-3 font-mono text-primary">MA301</td><td class="px-4 py-3 font-semibold">Probabilitas & Statistika</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Teori probabilitas, distribusi data, pengujian hipotesis, dan analisis statistik untuk kebutuhan data science.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">6</td><td class="px-4 py-3 font-mono text-primary">IF305</td><td class="px-4 py-3 font-semibold">Rekayasa Perangkat Lunak</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Siklus pengembangan perangkat lunak (SDLC), analisis kebutuhan, desain UML, dan manajemen proyek Agile.</td></tr>
+            <tr class="bg-primary/5 font-bold"><td colspan="3" class="px-4 py-3 text-right">Total SKS Semester 3</td><td class="px-4 py-3 text-center text-primary text-lg">19</td><td class="px-4 py-3"></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Semester 4 -->
+    <div class="semester-content" id="sem-4">
+      <div class="overflow-x-auto rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800">
+        <table class="w-full text-sm bg-white dark:bg-slate-900">
+          <thead><tr class="bg-primary text-white"><th class="px-4 py-3 text-left">No</th><th class="px-4 py-3 text-left">Kode MK</th><th class="px-4 py-3 text-left">Mata Kuliah</th><th class="px-4 py-3 text-center">SKS</th><th class="px-4 py-3 text-left">Deskripsi</th></tr></thead>
+          <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">1</td><td class="px-4 py-3 font-mono text-primary">IF401</td><td class="px-4 py-3 font-semibold">Kecerdasan Buatan</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Agen cerdas, pencarian heuristik, representasi pengetahuan, logika fuzzy, dan pengantar machine learning.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">2</td><td class="px-4 py-3 font-mono text-primary">IF402</td><td class="px-4 py-3 font-semibold">Pengembangan Aplikasi Web</td><td class="px-4 py-3 text-center font-bold">4</td><td class="px-4 py-3 text-slate-500">Framework back-end (Laravel/Node.js), REST API, autentikasi, dan integrasi database pada aplikasi web skala enterprise.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">3</td><td class="px-4 py-3 font-mono text-primary">IF403</td><td class="px-4 py-3 font-semibold">Basis Data Lanjut</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Optimasi query, indexing, stored procedures, transaksi, dan pengantar basis data NoSQL (MongoDB, Redis).</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">4</td><td class="px-4 py-3 font-mono text-primary">IF404</td><td class="px-4 py-3 font-semibold">Keamanan Informasi</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Kriptografi, ancaman siber (OWASP Top 10), penetration testing dasar, dan kerangka keamanan informasi (ISO 27001).</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">5</td><td class="px-4 py-3 font-mono text-primary">IF405</td><td class="px-4 py-3 font-semibold">Interaksi Manusia & Komputer</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Prinsip desain UI/UX, prototyping, usability testing, dan aksesibilitas dalam pengembangan antarmuka digital.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">6</td><td class="px-4 py-3 font-mono text-primary">UM401</td><td class="px-4 py-3 font-semibold">Kewirausahaan Teknologi</td><td class="px-4 py-3 text-center font-bold">2</td><td class="px-4 py-3 text-slate-500">Membangun startup teknologi, business model canvas, pitching, dan studi kasus perusahaan teknologi sukses.</td></tr>
+            <tr class="bg-primary/5 font-bold"><td colspan="3" class="px-4 py-3 text-right">Total SKS Semester 4</td><td class="px-4 py-3 text-center text-primary text-lg">18</td><td class="px-4 py-3"></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Semester 5 -->
+    <div class="semester-content" id="sem-5">
+      <div class="overflow-x-auto rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800">
+        <table class="w-full text-sm bg-white dark:bg-slate-900">
+          <thead><tr class="bg-primary text-white"><th class="px-4 py-3 text-left">No</th><th class="px-4 py-3 text-left">Kode MK</th><th class="px-4 py-3 text-left">Mata Kuliah</th><th class="px-4 py-3 text-center">SKS</th><th class="px-4 py-3 text-left">Deskripsi</th></tr></thead>
+          <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">1</td><td class="px-4 py-3 font-mono text-primary">IF501</td><td class="px-4 py-3 font-semibold">Machine Learning</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Algoritma supervised & unsupervised learning, evaluasi model, fitur engineering, dan scikit-learn/TensorFlow.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">2</td><td class="px-4 py-3 font-mono text-primary">IF502</td><td class="px-4 py-3 font-semibold">Pemrograman Mobile</td><td class="px-4 py-3 text-center font-bold">4</td><td class="px-4 py-3 text-slate-500">Pengembangan aplikasi Android/iOS menggunakan Flutter/React Native, state management, dan integrasi API.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">3</td><td class="px-4 py-3 font-mono text-primary">IF503</td><td class="px-4 py-3 font-semibold">Cloud Computing</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Layanan IaaS, PaaS, SaaS, serta praktikum deployment aplikasi di AWS, Google Cloud, dan Microsoft Azure.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">4</td><td class="px-4 py-3 font-mono text-primary">IF504</td><td class="px-4 py-3 font-semibold">Sistem Terdistribusi</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Konsep CAP theorem, microservices, message queue, dan konsistensi data pada sistem terdistribusi modern.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">5</td><td class="px-4 py-3 font-mono text-primary">IF505</td><td class="px-4 py-3 font-semibold">Data Analytics</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Eksplorasi data, visualisasi (Tableau/PowerBI), analisis statistik lanjut, dan penyusunan dashboard untuk pengambilan keputusan.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">6</td><td class="px-4 py-3 font-mono text-primary">IF506</td><td class="px-4 py-3 font-semibold">Etika Profesi TI</td><td class="px-4 py-3 text-center font-bold">2</td><td class="px-4 py-3 text-slate-500">Etika digital, regulasi teknologi, hak privasi, kode etik programmer, dan tanggung jawab profesional IT.</td></tr>
+            <tr class="bg-primary/5 font-bold"><td colspan="3" class="px-4 py-3 text-right">Total SKS Semester 5</td><td class="px-4 py-3 text-center text-primary text-lg">18</td><td class="px-4 py-3"></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Semester 6 -->
+    <div class="semester-content" id="sem-6">
+      <div class="overflow-x-auto rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800">
+        <table class="w-full text-sm bg-white dark:bg-slate-900">
+          <thead><tr class="bg-primary text-white"><th class="px-4 py-3 text-left">No</th><th class="px-4 py-3 text-left">Kode MK</th><th class="px-4 py-3 text-left">Mata Kuliah</th><th class="px-4 py-3 text-center">SKS</th><th class="px-4 py-3 text-left">Deskripsi</th></tr></thead>
+          <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">1</td><td class="px-4 py-3 font-mono text-primary">IF601</td><td class="px-4 py-3 font-semibold">Deep Learning</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Neural network, CNN, RNN, LSTM, dan Transformer. Implementasi model deep learning untuk pengolahan citra dan teks.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">2</td><td class="px-4 py-3 font-mono text-primary">IF602</td><td class="px-4 py-3 font-semibold">DevOps & CI/CD</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Praktik DevOps, containerisasi Docker, orkestrasi Kubernetes, CI/CD pipeline dengan GitHub Actions, dan monitoring.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">3</td><td class="px-4 py-3 font-mono text-primary">IF603</td><td class="px-4 py-3 font-semibold">Pengolahan Bahasa Alami (NLP)</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Text preprocessing, tokenisasi, word embedding, sentiment analysis, dan pengantar model bahasa besar (LLM).</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">4</td><td class="px-4 py-3 font-mono text-primary">IF604</td><td class="px-4 py-3 font-semibold">Internet of Things (IoT)</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Arsitektur IoT, pemrograman mikrokontroler (Arduino/Raspberry Pi), protokol MQTT, dan analisis data sensor real-time.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">5</td><td class="px-4 py-3 font-mono text-primary">IF605</td><td class="px-4 py-3 font-semibold">Pengujian Perangkat Lunak</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Strategi pengujian, unit testing, integration testing, end-to-end testing, dan otomasi pengujian dengan Selenium/Cypress.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">6</td><td class="px-4 py-3 font-mono text-primary">IF606</td><td class="px-4 py-3 font-semibold">Mata Kuliah Pilihan I</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Pilihan dari daftar mata kuliah elektif sesuai konsentrasi (AI, Cybersecurity, atau Full-Stack Development).</td></tr>
+            <tr class="bg-primary/5 font-bold"><td colspan="3" class="px-4 py-3 text-right">Total SKS Semester 6</td><td class="px-4 py-3 text-center text-primary text-lg">18</td><td class="px-4 py-3"></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Semester 7 -->
+    <div class="semester-content" id="sem-7">
+      <div class="overflow-x-auto rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800">
+        <table class="w-full text-sm bg-white dark:bg-slate-900">
+          <thead><tr class="bg-primary text-white"><th class="px-4 py-3 text-left">No</th><th class="px-4 py-3 text-left">Kode MK</th><th class="px-4 py-3 text-left">Mata Kuliah</th><th class="px-4 py-3 text-center">SKS</th><th class="px-4 py-3 text-left">Deskripsi</th></tr></thead>
+          <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">1</td><td class="px-4 py-3 font-mono text-primary">IF701</td><td class="px-4 py-3 font-semibold">Kerja Praktik (KP)</td><td class="px-4 py-3 text-center font-bold">4</td><td class="px-4 py-3 text-slate-500">Magang di perusahaan teknologi selama minimal 2 bulan, disertai laporan kerja praktik dan presentasi hasil magang.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">2</td><td class="px-4 py-3 font-mono text-primary">IF702</td><td class="px-4 py-3 font-semibold">Metodologi Penelitian</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Penyusunan proposal penelitian, tinjauan literatur, metode penelitian kuantitatif/kualitatif, dan penulisan karya ilmiah.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">3</td><td class="px-4 py-3 font-mono text-primary">IF703</td><td class="px-4 py-3 font-semibold">Sistem Informasi Enterprise</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Arsitektur ERP, integrasi sistem, Business Intelligence, dan implementasi SAP/Oracle di lingkungan perusahaan.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">4</td><td class="px-4 py-3 font-mono text-primary">IF704</td><td class="px-4 py-3 font-semibold">Komputasi Awan Lanjut</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Serverless architecture, infrastructure as code (Terraform), multi-cloud strategy, dan optimasi biaya cloud.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">5</td><td class="px-4 py-3 font-mono text-primary">IF705</td><td class="px-4 py-3 font-semibold">Mata Kuliah Pilihan II</td><td class="px-4 py-3 text-center font-bold">3</td><td class="px-4 py-3 text-slate-500">Pilihan lanjutan dari daftar mata kuliah elektif sesuai konsentrasi yang dipilih mahasiswa.</td></tr>
+            <tr class="bg-primary/5 font-bold"><td colspan="3" class="px-4 py-3 text-right">Total SKS Semester 7</td><td class="px-4 py-3 text-center text-primary text-lg">16</td><td class="px-4 py-3"></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Semester 8 -->
+    <div class="semester-content" id="sem-8">
+      <div class="overflow-x-auto rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800">
+        <table class="w-full text-sm bg-white dark:bg-slate-900">
+          <thead><tr class="bg-primary text-white"><th class="px-4 py-3 text-left">No</th><th class="px-4 py-3 text-left">Kode MK</th><th class="px-4 py-3 text-left">Mata Kuliah</th><th class="px-4 py-3 text-center">SKS</th><th class="px-4 py-3 text-left">Deskripsi</th></tr></thead>
+          <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">1</td><td class="px-4 py-3 font-mono text-primary">IF801</td><td class="px-4 py-3 font-semibold">Skripsi</td><td class="px-4 py-3 text-center font-bold">6</td><td class="px-4 py-3 text-slate-500">Penelitian mandiri untuk menyelesaikan permasalahan di bidang informatika, dituangkan dalam karya tulis ilmiah dan dipresentasikan di hadapan dewan penguji.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">2</td><td class="px-4 py-3 font-mono text-primary">IF802</td><td class="px-4 py-3 font-semibold">Seminar Hasil</td><td class="px-4 py-3 text-center font-bold">1</td><td class="px-4 py-3 text-slate-500">Presentasi hasil penelitian skripsi di depan dosen penguji untuk mendapatkan masukan dan penilaian.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">3</td><td class="px-4 py-3 font-mono text-primary">IF803</td><td class="px-4 py-3 font-semibold">Kolokium Informatika</td><td class="px-4 py-3 text-center font-bold">2</td><td class="px-4 py-3 text-slate-500">Seminar dan diskusi riset terkini dari paper ilmiah internasional yang relevan dengan perkembangan teknologi masa depan.</td></tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50"><td class="px-4 py-3">4</td><td class="px-4 py-3 font-mono text-primary">IF804</td><td class="px-4 py-3 font-semibold">Mata Kuliah Pilihan III</td><td class="px-4 py-3 text-center font-bold">2</td><td class="px-4 py-3 text-slate-500">Mata kuliah pilihan lanjutan untuk memperdalam konsentrasi atau memperluas wawasan di bidang terkait.</td></tr>
+            <tr class="bg-primary/5 font-bold"><td colspan="3" class="px-4 py-3 text-right">Total SKS Semester 8</td><td class="px-4 py-3 text-center text-primary text-lg">11</td><td class="px-4 py-3"></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Elective courses note -->
+    <div class="mt-8 p-6 bg-primary/5 rounded-2xl border border-primary/20">
+      <h3 class="font-bold text-primary mb-2 flex items-center gap-2"><span class="material-symbols-outlined">info</span> Mata Kuliah Pilihan</h3>
+      <p class="text-slate-600 dark:text-slate-400 text-sm">Mahasiswa dari Semester 6 diwajibkan memilih satu dari tiga konsentrasi: <strong>Artificial Intelligence & Data Science</strong>, <strong>Cybersecurity & Network</strong>, atau <strong>Full-Stack & Mobile Development</strong>. Lihat halaman <a href="/akademik/modul-ai.html" class="text-primary hover:underline">Modul AI</a>, <a href="/akademik/modul-web.html" class="text-primary hover:underline">Modul Web</a>, dan <a href="/akademik/modul-mobile.html" class="text-primary hover:underline">Modul Mobile</a> untuk detail setiap konsentrasi.</p>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const tabs = document.querySelectorAll('.tab-btn');
+      const contents = document.querySelectorAll('.semester-content');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          tabs.forEach(t => t.classList.remove('active'));
+          contents.forEach(c => c.classList.remove('active'));
+          tab.classList.add('active');
+          document.getElementById('sem-' + tab.dataset.sem).classList.add('active');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
