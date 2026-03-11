@@ -49,7 +49,7 @@ Website profil resmi Departemen Informatika yang dirancang dengan estetika moder
 
 1.  **Clone Project**:
     ```bash
-    git clone https://github.com/<username>/<repository>
+    git clone https://github.com/Raka-coder/landing-page-pabp
     ```
 2.  **Buka file `index.html`**:
     Anda bisa langsung membuka file `index.html` di browser pilihan Anda tanpa perlu server khusus (berbasis client-side).
